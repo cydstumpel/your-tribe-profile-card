@@ -1,12 +1,13 @@
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!../node_modules/sass-resources-loader/lib/loader.js??ruleSet[1].rules[2].use[4]!./assets/scss/app.scss ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************/
-  :root {
-    --dark: #010101;
-    --darkgrey: #1a1a1a;
-    --light: #f5f2eb;
-    --bezier: cubic-bezier(0.17, 0.67, 0, 1);
-  }
+:root {
+  --dark: #010101;
+  --darkgrey: #1a1a1a;
+  --light: #f5f2eb;
+  --bezier: cubic-bezier(0.17, 0.67, 0, 1);
+}
+
 .sr-only {
   position: absolute;
   text-indent: -9999px;
@@ -64,10 +65,10 @@ li a {
 }
 
 .large-heading {
-  font-size: clamp(5rem, 16.6666666667vw, 20rem);
+  font-size: clamp(9.5rem, 16.6666666667vw, 20rem);
   line-height: 0.8;
   letter-spacing: -0.03em;
-  font-variation-settings: "wght" 900;
+  font-variation-settings: "wght"900;
 }
 
 .small-heading {
@@ -91,7 +92,8 @@ li a {
   line-height: 1.5;
 }
 
-.medium-body span, .small-body span {
+.medium-body span,
+.small-body span {
   font-variation-settings: "wght"600;
 }
 
@@ -123,10 +125,13 @@ main {
   overflow: hidden;
   width: 50vw;
   margin: auto;
-  @media (max-width: 1024px) {
+
+}
+
+@media (max-width: 1024px) {
+  main {
     width: 100%;
   }
-
 }
 
 .business-card-full {
@@ -151,6 +156,7 @@ main:hover .business-card-full {
 main .business-card-full.active {
   transform: rotateY(0) rotateX(45deg);
 }
+
 .business-card-full.active .business-card--front-front,
 .business-card-full.active .business-card--front-back {
   --rotation: 130deg;
@@ -199,11 +205,11 @@ main .business-card-full.active {
 }
 
 .business-card__rotate {
-display: flex;
-flex-wrap: wrap;
-align-items: stretch;
-height: 100%;
-transform: scale(-1, -1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  height: 100%;
+  transform: scale(-1, -1);
 }
 
 .business-card--back-back p {
