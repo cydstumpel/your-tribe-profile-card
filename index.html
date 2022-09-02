@@ -13,46 +13,72 @@
 
 <body>
   <main>
+    <div class="gradient">
+      <svg viewBox="0 0 2041 1466" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient cx="45.978%" cy="42.664%" fx="45.978%" fy="42.664%" r="41.428%"
+            gradientTransform="matrix(0 .93844 -1 0 .886 -.005)" id="g-teal-blue">
+            <stop stop-color="#3D00FF" stop-opacity=".612" offset="0%"></stop>
+            <stop stop-color="#00AC8E" stop-opacity=".427" offset="57.326%"></stop>
+            <stop stop-opacity="0" offset="100%"></stop>
+          </radialGradient>
+          <filter x="-6.2%" y="-5.8%" width="112.4%" height="111.7%" filterUnits="objectBoundingBox" id="b">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+          </filter>
+        </defs>
+        <path
+          d="M464 628c-597.384 444.965-686.384 689.965-267 735 629.076 67.553 930.337-1039.804 1288-862 399.891 198.797 608.891 803.464 627 1814-273.242-730.477-393.909-1265.477-362-1605 31.909-339.523 233.242-662.856 604-970L464 628Z"
+          fill="url(#g-teal-blue)" filter="url(#b)" fill-rule="evenodd"></path>
+      </svg>
+    </div>
     <div class="business-card-full">
       <section class="business-card business-card--front-front">
         <p class="business-card__name large-heading">
           <span>CRS</span>
           <span aria-hidden>CRS</span>
         </p>
-        <svg viewBox="0 0 500 500" width="48" height="48">
-          <circle cx="250" cy="250" r="250" fill="010101"></circle>
-          <path fill="#F5F2EB"
-            d="M146.171301,54.6736739 L178.449554,86.9519271 C120.839452,115.592139 81.25,175.047764 81.25,243.75 C81.25,340.399831 159.600169,418.75 256.25,418.75 C324.952236,418.75 384.407861,379.160548 413.048073,321.550446 L445.326326,353.828699 C407.404282,418.82496 336.927567,462.5 256.25,462.5 C135.437711,462.5 37.5,364.562289 37.5,243.75 C37.5,163.072433 81.1750399,92.5957179 146.171301,54.6736739 Z">
-          </path>
-        </svg>
       </section>
       <section class="business-card business-card--front-back">
         <div class="business-card__rotate">
-          <div class="business-card__image">
-            <img src="assets/img/cyd.jpg" alt="Cyd">
-          </div>
           <div class="business-card__text">
-            <div class="business-card__top">
-              <h1 class="small-heading">
-                Cyd Stumpel
-              </h1>
-              <p class="small-body caps business-card__job-title">
-                Independent <span>Creative Developer</span> / <span>coteacher</span>
-              </p>
-              <p class="small-body business-card__email">
-                m: <a href="mailto:c.r.stumpel@hva.nl">c.r.stumpel@hva.nl</a>
-              </p>
-              <p class="small-body business-card__portfolio">
-                w: <a href="https://cydstumpel.nl">cydstumpel.nl</a>
-              </p>
+            <div class="business-card__main">
+              <div class="left">
+                <div class="business-card__image">
+                  <img src="assets/img/cyd.jpg" alt="Cyd">
+                </div>
+                <div class="text">
+                  <h1 class="medium-body caps">
+                    Cyd Stumpel
+                  </h1>
+                  <div class="content">
+                    <p class="xsmall-body business-card__job-title">
+                      Independent <span>Creative Developer</span> / <span>Coteacher</span> / 2021 & 2022
+                      <span>Jury member</span> Awwwards
+                    </p>
+                    <p class="xsmall-body business-card__email">
+                      m: <a href="mailto:c.r.stumpel@hva.nl">c.r.stumpel@hva.nl</a>
+                      <br>
+                      w: <a href="https://cydstumpel.nl">cydstumpel.nl</a>
+                    </p>
+
+                    <p class="xsmall-body">
+                      Previously worked at/with/for: WeTransfer, Oedipus, Matise, LamaLama, Monopo London & Monopo NY etc.
+                    </p>
+                    <p class="xsmall-body">
+                      
+                    </p>
+                  </div>
+                  <div class="business-card__socials row">
+                    <a class="xsmall-body caps business-card__codepen" href="https://codepen.io/Sidstumple">codepen</a>
+                    <a class="xsmall-body caps business-card__github" href="https://github.com/Sidstumple">github</a>
+                    <a class="xsmall-body caps business-card__twitter" href="https://twitter.com/cydstumpel">twitter</a>
+                    <a class="xsmall-body caps business-card__instagram" href="https://instagram.com/cydstumpel">instagram</a>
+                  </div>
+                </div>
+              </div>
+              
             </div>
 
-            <div class="business-card__socials row">
-              <a class="small-body caps business-card__codepen" href="https://codepen.io/Sidstumple">codepen</a>
-              <a class="small-body caps business-card__github" href="https://github.com/Sidstumple">github</a>
-              <a class="small-body caps business-card__twitter" href="https://twitter.com/cydstumpel">twitter</a>
-              <a class="small-body caps business-card__instagram" href="https://instagram.com/cydstumpel">instagram</a>
-            </div>
           </div>
         </div>
       </section>
@@ -68,7 +94,7 @@
 
             <p class="medium-body business-card__question">
               <span>
-                I get my inspiration from: 
+                I get my inspiration from:
               </span>
             </p>
             <p class="small-body">Awwwards, Codrops & twitter</p>
@@ -88,7 +114,23 @@
         </p>
       </section>
   </main>
+  <svg class="clippie" viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg">
+    <clipPath id="clippie" clipPathUnits="objectBoundingBox">
+      <path
+        d="M720,0 L720,400 L-4.54747351e-13,400 L-4.54747351e-13,0 L720,0 Z M19,54 C19,73.3299662 34.6700338,89 54,89 C63.0705503,89 71.3352062,85.5495557 77.5530176,79.8896173 L74.5431111,76.9828478 C69.2224732,81.4452643 62.3625349,84.1323246 54.875,84.1323246 C37.9612795,84.1323246 24.25,70.4210451 24.25,53.5073246 C24.25,45.735787 27.1447669,38.6403585 31.9148689,33.2404706 L28.5418559,29.981479 C22.6262895,36.2493457 19,44.7011902 19,54 Z M54,19 C45.7707605,19 38.2048519,21.8400576 32.2289601,26.5934871 L35.5209015,29.7719607 C36.7584679,28.7616215 38.0765261,27.8461496 39.4639821,27.036639 L43.9829376,31.5555944 C35.9175233,35.5652241 30.375,43.8890116 30.375,53.5073246 C30.375,67.038301 41.3440237,78.0073246 54.875,78.0073246 C64.493313,78.0073246 72.8171005,72.4648013 76.8267302,64.3993871 L81.3456856,68.9183425 C80.402096,70.5356024 79.3145375,72.058572 78.1005803,73.4696814 L81.0019395,76.2702302 C85.99835,70.2191528 89,62.4601129 89,54 C89,34.6700338 73.3299662,19 54,19 Z"
+        id="Combined-Shape" fill="#DB4242"></path>
+    </clipPath>
+  </svg>
+  <svg class="clippie" viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg">
+    <clipPath id="clippie-mirror" clipPathUnits="objectBoundingBox">
+      <path
+        d="M720,0 L720,400 L0,400 L0,0 L720,0 Z M19,54 C19,73.3299662 34.6700338,89 54,89 C63.0705503,89 71.3352062,85.5495557 77.5530176,79.8896173 L74.5431111,76.9828478 C69.2224732,81.4452643 62.3625349,84.1323246 54.875,84.1323246 C37.9612795,84.1323246 24.25,70.4210451 24.25,53.5073246 C24.25,45.735787 27.1447669,38.6403585 31.9148689,33.2404706 L28.5418559,29.981479 C22.6262895,36.2493457 19,44.7011902 19,54 Z M54,19 C45.7707605,19 38.2048519,21.8400576 32.2289601,26.5934871 L35.5209015,29.7719607 C36.7584679,28.7616215 38.0765261,27.8461496 39.4639821,27.036639 L43.9829376,31.5555944 C35.9175233,35.5652241 30.375,43.8890116 30.375,53.5073246 C30.375,67.038301 41.3440237,78.0073246 54.875,78.0073246 C64.493313,78.0073246 72.8171005,72.4648013 76.8267302,64.3993871 L81.3456856,68.9183425 C80.402096,70.5356024 79.3145375,72.058572 78.1005803,73.4696814 L81.0019395,76.2702302 C85.99835,70.2191528 89,62.4601129 89,54 C89,34.6700338 73.3299662,19 54,19 Z"
+        id="Combined-Shape" fill="#DB4242"
+        transform="translate(360.000000, 200.000000) scale(-1, 1) translate(-360.000000, -200.000000) "></path>
+    </clipPath>
+  </svg>
   <script src="scripts/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
 </body>
 
 </html>
