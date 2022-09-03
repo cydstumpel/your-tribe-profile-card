@@ -90,10 +90,10 @@ li a {
 }
 
 .xsmall-body {
-  font-size: 0.75rem;
+  font-size: clamp(0.625rem, 1vw, 0.75rem);
   letter-spacing: -0.011em;
   font-weight: 500;
-  font-variation-settings: "wght"500;
+  font-variation-settings: "wght" 500;
 }
 
 .medium-body span,
@@ -133,8 +133,10 @@ main {
 }
 
 .gradient {
-  position: fixed;
-  inset: -50vw 0 0 0;
+  position: absolute;
+  z-index: 0;
+  inset: -20% 0 0 -10%;
+  opacity: 0.8;
 }
 
 .gradient svg {
@@ -243,9 +245,13 @@ main {
 .business-card .content {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   flex-grow: 1;
 }
+.business-card .content p {
+  max-width: 300px;
+}
+
 
 .business-card--back-back p {
   margin-left: auto;
@@ -296,11 +302,13 @@ main {
 
 .business-card__job-title {
   margin-top: 0.15em;
-  width: 45%;
+  width: 47%;
 }
 
 .business-card__email {
   margin-top: 0.15em;
+  width: 40%;
+  flex-grow: 1;
   
 }
   .business-card__question {
