@@ -256,6 +256,7 @@ main {
 .business-card--back-back p {
   margin-left: auto;
   margin-top: auto;
+  text-align: right;
 }
 
 .business-card svg {
